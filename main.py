@@ -274,11 +274,11 @@ async def tierlistGenerate(channel):
         index = RankGrid[i][j]
         icon = avatarImages[index]
         template.paste(icon.resize((cellStretch,cellStretch)),(collumnPos[j],rowPos[i]))
-
-    #Save + Embed
-    template.save("newTierlist.png")
-    file = discord.File("newTierlist.png",filename="newTierlist.png")
-    await channel.send(file=file)
+  
+  #Save + Embed
+  template.save("newTierlist.png")
+  file = discord.File("newTierlist.png",filename="newTierlist.png")
+  await channel.send(file=file)
 
 
 
